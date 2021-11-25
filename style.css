@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 15px;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    min-height: 70px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 5%;
+    height: 5%;
+    margin-left: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    font-family: 'Ruda', sans-serif;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+#main{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://s1.cdn.autoevolution.com/images/news/these-very-young-motorsport-drivers-get-to-ride-in-bmw-m-cars-when-off-track-146958_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    width: 100%;
+}
+
+h1, h2,h3{
+    font-family: 'Ruda', sans-serif;
+}
+
+p{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+#main h1{
+    padding-top: 220px;
+    padding-left: 100px;
+    font-size: 3rem;
+}
+
+
+#benefits{
+    display: flex;
+    align-items: center; 
+}
+
+#benefits .left{
+    padding: 70px 0 150px 100px;
+    font-size: 3rem;
+    width: 70%;
+}
+
+#benefits .left button{
+    margin-top: 10%;
+    background-color: grey;
+    color: white;
+    border: 0;
+    padding:  2% 5%;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 5px 3px #a3a3a3;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#benefits .left button a{
+    text-decoration: none;
+    color: white;
+}
+
+#benefits .left button a:active{
+    top: 1%;
+}
+
+#benefits .right .container{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+}
+
+#benefits .right .container .box{
+    margin: 5%;
+    max-width: 200px;
+
+}
+
+
+
+#news{
+    background-color: rgb(243, 243, 243);
+}
+
+.news-title{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ruda', sans-serif;
+    font-size: 3rem;
+}
+
+#news .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#news .container .box{
+    margin:  5%;
+    max-width: 250px;
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+#news .container .box img{
+    padding-top: 15px;
+    max-width: 250px;
+    height: 180px;
+    
+}
+
+#news .container .box .text{
+    padding: 30px 15px;
+}
+
+
+#news .container .box .date{
+    color: rgb(172, 169, 169);
+}
+
+
+#join{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/topbmw-1525281397.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    max-height: 500px;
+}
+
+
+#join{
+    color: white;
+    padding-top: 200px;
+    text-align: center;
+    font-family: 'Ruda', sans-serif;
+}
+
+#join h1{
+    font-size: 3rem;
+}
+
+#join button{
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(46, 46, 119);
+    color: white;
+    padding: 2% 2%;
+    border: 0;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+#join button a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    min-height: 200px;
+    background-color: rgb(52, 57, 63);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contact, .subscribe{
+    margin: 3%;
+}
+
+.subscribe button, input{
+    max-height: 50px;
+    padding: 3%;
+}
+
+.subscribe input{
+    max-width: 250px;
+}
+
+
+
+.subscribe button{
+    background-color: rgb(46, 46, 119);
+    border: 0;
+    color: white;
+}
+
+
+footer h3{
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+/*responsive*/
+@media only screen and (max-width : 600px){
+    p,a{
+        font-size: 1rem;
+    }
+
+    h1{
+         font-size: 2rem;
+     }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+
+    header{
+        position: static;
+    }
+
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    
+    #benefits{
+        flex-direction: column;
+    }
+
+    #benefits .left{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #benefits .right .container{
+        flex-direction: column;
+    }
+
+    #news .container .box{
+        margin: 5% auto;
+    }
+
+
+
+    #news .container{
+        flex-direction: column;
+    }
+
+
+    footer{
+        flex-direction: column;
+    }
+}
